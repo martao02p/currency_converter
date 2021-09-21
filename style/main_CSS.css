@@ -12,19 +12,25 @@ body {
   justify-content: flex-start;
 }
 header {
-  /* height: 30%; */
+  max-width: 360px;
   padding: 25px;
   display: flex;
   flex-direction: column;
   align-content: center;
-  align-items: center;
   justify-content: center;
 
   background-color: rgb(96, 146, 73);
 }
-#logo {
-  height: 130px;
-  width: 130px;
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#logo-img{
+  height: 150px;
+  width: 150px;
 }
 .title {
   text-align: center;
@@ -48,21 +54,35 @@ main {
   background-color: rgb(96, 146, 73);
 }
 #numbInput {
-  border: none;
+  border-radius: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background:
+    linear-gradient(90deg, #222, #222) center bottom/0 0.15em no-repeat,
+    linear-gradient(90deg, #ccc, #ccc) left bottom/100% 0.15em no-repeat,
+    linear-gradient(90deg, #fafafa, #fafafa) left bottom/100% no-repeat;
+  transition: background-size 0.3s ease;
 
-  /* border-bottom: 3px black; */
+
+  position: relative;
+  border-top: 20px solid transparent;
+  margin-bottom: 5px;
+
+ /* my code below  */
   background-color: rgb(191, 226, 184);
+  color: rgb(53, 44, 34);
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 500;
-  color: rgb(53, 44, 34);
   height: 90px;
   width: 120px;
 }
-#numbInput:focus{
-  border: none;
+.input-all-field input.dirty,
+#numbInput:not(:placeholder-shown),
+#numbInput:focus {
+  background-size: 100% 0.15em, 100% 0.1em, 100%;
 }
 #currency {
   width: 120px;
