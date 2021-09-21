@@ -1,15 +1,80 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-body{
-  min-height: 100vh;
+body {
+  /* min-width: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+header {
+  /* height: 30%; */
+  padding: 25px;
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: center;
 
+  background-color: rgb(96, 146, 73);
 }
+#logo {
+  height: 130px;
+  width: 130px;
+}
+.title {
+  text-align: center;
+}
+.title-text {
+  font-family: "Source Sans Pro", sans-serif;
+  color: azure;
+  font-size: 43px;
+}
+main {
+  width: 100%;
+}
+.left-boxes {
+  width: 100%;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
 
+  background-color: rgb(96, 146, 73);
+}
+#numbInput {
+  border: none;
+
+  /* border-bottom: 3px black; */
+  background-color: rgb(191, 226, 184);
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  color: rgb(53, 44, 34);
+  height: 90px;
+  width: 120px;
+}
+#numbInput:focus{
+  border: none;
+}
+#currency {
+  width: 120px;
+  height: 90px;
+  border: none;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 50px;
+}
+.opt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
