@@ -13,6 +13,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+<!-- style for numbers input place  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap" rel="stylesheet">
+<!-- icon -->
+<script src="https://kit.fontawesome.com/362e3583fb.js" crossorigin="anonymous"></script>
   <title>Currency converter</title>
 <link rel="stylesheet" href="style/main_CSS.css">
 </head>
@@ -28,22 +34,24 @@
   <main>
     <div class="main-container">
       <div class="left-boxes">
-        <label class="input-all-field">
-          <input type="number" id="numbInput" placeholder="value">
-          <span class="placeholder">Enter URL</span>
-        </label>
-        <select name="currency" id="currency">
-          <option class="opt" value="eur">EUR</option>
-          <option class="opt" value="usd">USD</option>
-          <option class="opt" value="chf">CHF</option>
-        </select>
+        <input type="number" id="numbInput" placeholder="value">
+      
+          <select name="currency" id="currency">
+            <option class="opt" value="eur">EUR</option>
+            <option class="opt" value="usd">USD</option>
+            <option class="opt" value="chf">CHF</option>
+          </select>
+   
       </div>
-      <button id="btn">go...</button>
-      <h3 id="the_displayed_result">...</h3>
     </div>
+      <button id="btn"><i class="fas fa-chevron-down"></i></button>
+      <h3 id="the_displayed_result">...</h3>
   </main>
   <footer>
-    copyrights Marta brand &#169	
+    <div class="footer-text">
+
+      copyrights Marta brand &#169	
+    </div>
   </footer>
   
   <script src="js_files/main.js" defer></script>

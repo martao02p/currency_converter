@@ -10,6 +10,7 @@ body {
   align-content: flex-start;
   align-items: flex-start;
   justify-content: flex-start;
+  background-color: #fffdee;
 }
 header {
   max-width: 360px;
@@ -19,7 +20,7 @@ header {
   align-content: center;
   justify-content: center;
 
-  background-color: rgb(96, 146, 73);
+  background-color: #87986a;
 }
 .logo {
   display: flex;
@@ -28,7 +29,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-#logo-img{
+#logo-img {
   height: 150px;
   width: 150px;
 }
@@ -37,52 +38,52 @@ header {
 }
 .title-text {
   font-family: "Source Sans Pro", sans-serif;
-  color: azure;
+  color: #e9f5db;
+  font-weight: bold;
   font-size: 43px;
 }
 main {
-  width: 100%;
+  /* width: 360px; */
+  text-align: center;
+}
+.main-container {
+  max-width: 360px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  background-color: #87986a;
 }
 .left-boxes {
-  width: 100%;
   padding: 10px 30px;
   display: flex;
   flex-direction: row;
   align-content: center;
+  align-items: center;
   justify-content: space-around;
-
-  background-color: rgb(96, 146, 73);
+  flex-wrap: wrap;
 }
 #numbInput {
-  border-radius: 0;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  background:
-    linear-gradient(90deg, #222, #222) center bottom/0 0.15em no-repeat,
-    linear-gradient(90deg, #ccc, #ccc) left bottom/100% 0.15em no-repeat,
-    linear-gradient(90deg, #fafafa, #fafafa) left bottom/100% no-repeat;
-  transition: background-size 0.3s ease;
-
-
-  position: relative;
-  border-top: 20px solid transparent;
-  margin-bottom: 5px;
-
- /* my code below  */
-  background-color: rgb(191, 226, 184);
-  color: rgb(53, 44, 34);
+  border: none;
+  background-color: #e9f5db;
+  color: #be8057;
   text-align: center;
-  font-family: "Libre Franklin", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 45px;
-  font-weight: 500;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 40px;
   height: 90px;
   width: 120px;
+  margin: 15px;
 }
-.input-all-field input.dirty,
-#numbInput:not(:placeholder-shown),
-#numbInput:focus {
-  background-size: 100% 0.15em, 100% 0.1em, 100%;
+#numbInput:focus,
+#numbInput::after,
+.currency:focus,
+.currency::after {
+  outline: none;
+}
+#numbInput::-webkit-outer-spin-button,
+#numbInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 #currency {
   width: 120px;
@@ -91,10 +92,49 @@ main {
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
+  margin: 15px;
+  -webkit-appearance: none;
+  outline: none;
+  color: #e9f5db;
+  background-color: #be8057;
 }
 .opt {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+#btn {
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition-duration: 0.4s;
+  position: absolute;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  background-color: bisque;
+}
+#btn:hover {
+  /* Green */
+  color: white;
+}
+#the_displayed_result {
+  margin-top: 23%;
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 60px;
+}
+footer {
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  width: 360px;
+}
+.footer-text {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  display: flex;
   justify-content: center;
 }
