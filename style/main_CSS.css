@@ -175,6 +175,10 @@ footer {
     display: flex;
     align-items: center;
   }
+  .title-text{
+  margin-top: 30%;
+    
+  }
   #logo-img {
     height: 300px;
     width: 300px;
