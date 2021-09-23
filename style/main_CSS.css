@@ -125,6 +125,7 @@ main {
 #btn:hover {
   /* Green */
   color: white;
+  cursor: pointer;
 }
 #the_displayed_result-box {
   width: 100%;
